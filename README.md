@@ -8,7 +8,7 @@ $ docker build . -t app # create app image
 $ docker-compose up # run containers
 ```
 
-# Stack
+## Stack
 - Spring Boot 2.2.0
 - Spring Data JPA 2.2.0
 - PostgreSQL 42.2.2
