@@ -1,0 +1,19 @@
+server:
+  port: 6565
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: always
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        ddl-auto: create
+    generate-ddl: true
