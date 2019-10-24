@@ -2,7 +2,7 @@
 
 # spring-boot-postgres-docker
 
-# Installation
+## Installation
 ```bash
 $ docker build . -t app # create app image
 $ docker-compose up # run containers
