@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/egnaf/spring-boot-postgres-docker.svg?branch=dev)](https://travis-ci.org/egnaf/spring-boot-postgres-docker)
 
-# spring-boot-postgres-docker
+# spring-boot-docker-examples
 
 ## Installation
 ```bash
