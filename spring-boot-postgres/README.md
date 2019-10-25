@@ -4,9 +4,13 @@
 
 ## Installation
 ```bash
-$ cd path-to-project/
 $ ./run.sh # run services
 ```
+
+## Stack
+- Spring Boot 2.2.0
+- Spring Data JPA 2.2.0
+- PostgreSQL 42.2.2
 
 ## Contribute
 For any problems, comments, or feedback please create an issue 
