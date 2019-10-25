@@ -1,6 +1,6 @@
-package com.github.egnaf.app.service;
+package com.company.app.service;
 
-import com.github.egnaf.app.entity.HumanEntity;
+import com.company.app.entity.HumanEntity;
 
 import java.util.List;
 

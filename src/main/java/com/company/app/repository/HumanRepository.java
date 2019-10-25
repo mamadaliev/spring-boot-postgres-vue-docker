@@ -1,6 +1,6 @@
-package com.github.egnaf.app.repository;
+package com.company.app.repository;
 
-import com.github.egnaf.app.entity.HumanEntity;
+import com.company.app.entity.HumanEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

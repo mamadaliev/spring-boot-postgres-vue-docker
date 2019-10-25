@@ -1,8 +1,9 @@
-package com.github.egnaf.app.entity;
+package com.company.app.entity;
 
 import javax.persistence.*;
 
 @Entity
+@Table(name = "humans")
 public class HumanEntity {
 
     @Basic
