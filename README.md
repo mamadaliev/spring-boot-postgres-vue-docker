@@ -4,13 +4,13 @@
 
 ## Installation
 ```bash
-$ cd path-to-project/
-$ ./run.sh # run services
+$ cd path-to-project/ # change directory path to project path
+$ ./start.sh # build services and run in containers
 ```
 
 ## Contribute
 For any problems, comments, or feedback please create an issue 
-[here](https://github.com/mamadaliev/design-patterns/issues).
+[here](https://github.com/egnaf/design-patterns/issues).
 <br>
 
 ## Licence
