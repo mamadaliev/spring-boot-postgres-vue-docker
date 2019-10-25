@@ -1,8 +1,8 @@
-package com.github.egnaf.app.service.impl;
+package com.company.app.service.impl;
 
-import com.github.egnaf.app.entity.HumanEntity;
-import com.github.egnaf.app.repository.HumanRepository;
-import com.github.egnaf.app.service.HumanService;
+import com.company.app.entity.HumanEntity;
+import com.company.app.repository.HumanRepository;
+import com.company.app.service.HumanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
