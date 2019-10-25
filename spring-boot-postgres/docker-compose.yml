@@ -1,0 +1,16 @@
+version: '3'
+services:
+  database:
+    restart: always
+    image: postgres:latest
+    ports:
+      - "6564:5432"
+    environment:
+      - POSTGRES_DB=demo
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+
+  backend:
+    build: .
+    ports:
+      - 6565:8080
