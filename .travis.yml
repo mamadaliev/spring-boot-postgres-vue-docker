@@ -1,0 +1,4 @@
+language: java
+install: true
+script:
+  - cd spring-boot-postgres && mvn -B verify && cd ..
