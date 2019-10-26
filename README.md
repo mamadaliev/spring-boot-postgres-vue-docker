@@ -13,5 +13,5 @@ For any problems, comments, or feedback please create an issue
 [here](https://github.com/egnaf/design-patterns/issues).
 <br>
 
-## Licence
+## License
 Project is released under the [MIT](https://en.wikipedia.org/wiki/MIT_License).
