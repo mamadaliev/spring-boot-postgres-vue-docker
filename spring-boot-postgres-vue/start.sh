@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # clean artifact and rebuild maven application
-mvn clean install
+cd ./backend/ && mvn clean install && cd ..
 
 ## stop and remove containers created by 'docker-compose up'
 docker-compose build
