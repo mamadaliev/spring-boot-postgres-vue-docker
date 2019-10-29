@@ -3,9 +3,10 @@
 # spring-boot-docker-examples
 
 ## Installation
+Change directory path to project directory with `cd`, build services and run in containers with run the `start.sh`. 
 ```bash
-$ cd path-to-project/ # change directory path to project path
-$ ./start.sh # build services and run in containers
+$ cd project-name
+$ ./start.sh
 ```
 
 ## Contribute
