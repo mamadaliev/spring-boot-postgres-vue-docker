@@ -3,7 +3,6 @@ package com.company.app.service.impl;
 import com.company.app.entity.HumanEntity;
 import com.company.app.repository.HumanRepository;
 import com.company.app.service.HumanService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,7 +12,6 @@ public class HumanServiceImpl implements HumanService {
 
     private final HumanRepository humanRepository;
 
-    @Autowired
     public HumanServiceImpl(HumanRepository humanRepository) {
         this.humanRepository = humanRepository;
     }
