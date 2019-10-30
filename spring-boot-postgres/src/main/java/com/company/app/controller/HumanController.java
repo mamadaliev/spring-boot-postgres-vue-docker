@@ -1,6 +1,6 @@
 package com.company.app.controller;
 
-import com.company.app.entity.HumanEntity;
+import com.company.app.entity.Human;
 import com.company.app.service.HumanService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +17,7 @@ public class HumanController {
     }
 
     @GetMapping(value = "/humans")
-    public List<HumanEntity> getAll() {
+    public List<Human> getAll() {
         return humanService.getAll();
     }
 }
