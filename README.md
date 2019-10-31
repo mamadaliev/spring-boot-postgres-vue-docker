@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/egnaf/spring-boot-docker-examples.svg)](https://travis-ci.org/egnaf/spring-boot-postgres-docker)
+[![Build Status](https://travis-ci.org/egnaf/spring-boot-docker-samples.svg)](https://travis-ci.org/egnaf/spring-boot-postgres-docker)
 
-# spring-boot-docker-examples
+# spring-boot-docker-samples
 
 ## Installation
 Change directory path to project directory with `cd`, build services and run in containers with run the `start.sh`. 
