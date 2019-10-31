@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "humans")
-public class HumanEntity {
+public class Human {
 
     @Basic
     @Column(name = "id")
@@ -20,10 +20,10 @@ public class HumanEntity {
     @Column(name = "age")
     private int age;
 
-    public HumanEntity() {
+    public Human() {
     }
 
-    public HumanEntity(String nickname, int age) {
+    public Human(String nickname, int age) {
         this.nickname = nickname;
         this.age = age;
     }
