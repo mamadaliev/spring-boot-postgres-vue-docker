@@ -2,8 +2,13 @@
 
 # spring-boot-docker-samples
 
+## Stack
+- Spring Boot
+- Docker
+- Maven
+
 ## Installation
-Change directory path to project directory with `cd`, build services and run in containers with run the `start.sh`. 
+To change directory path to project directory with `cd` and to build services and run in containers with run the `start.sh`. 
 ```bash
 $ cd project-name
 $ ./start.sh
@@ -11,7 +16,7 @@ $ ./start.sh
 
 ## Contribute
 For any problems, comments, or feedback please create an issue 
-[here](https://github.com/egnaf/design-patterns/issues).
+[here](https://github.com/egnaf/spring-boot-docker-samples/issues).
 <br>
 
 ## License
