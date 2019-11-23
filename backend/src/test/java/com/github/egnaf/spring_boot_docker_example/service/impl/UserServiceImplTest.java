@@ -1,5 +1,6 @@
 package com.github.egnaf.spring_boot_docker_example.service.impl;
 
+import com.github.egnaf.spring_boot_docker_example.ApplicationTest;
 import com.github.egnaf.spring_boot_docker_example.domain.User;
 import com.github.egnaf.spring_boot_docker_example.exception.UserExistsException;
 import com.github.egnaf.spring_boot_docker_example.exception.UserNotFoundException;
@@ -10,7 +11,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
@@ -20,8 +20,7 @@ import static org.junit.Assert.assertEquals;
 
 @Slf4j
 @RunWith(SpringRunner.class)
-@SpringBootTest
-public class UserServiceImplTest {
+public class UserServiceImplTest extends ApplicationTest {
 
     @Autowired
     private UserRepository userRepository;
