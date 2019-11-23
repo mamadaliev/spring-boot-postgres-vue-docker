@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.egnaf</groupId>
-    <artifactId>spring-boot-docker-example</artifactId>
+    <groupId>com.github.egnaf.spring_boot_docker_example</groupId>
+    <artifactId>backend</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
