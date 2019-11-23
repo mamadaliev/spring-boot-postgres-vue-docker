@@ -8,5 +8,5 @@ public interface UserService {
 
     List<User> getUsers();
     User getUser(long id);
-    void addUser(String nickname, String email, String password);
+    User addUser(String nickname, String email, String password);
 }

@@ -38,7 +38,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void addUser(String nickname, String email, String password) {
+    public User addUser(String nickname, String email, String password) {
 
         if (userRepository.existsByEmail(email)) {
             throw new UserExistsException("User email exists");
@@ -52,6 +52,7 @@ public class UserServiceImpl implements UserService {
             user.setEmail(email);
             user.setPassword(password);
             userRepository.save(user);
+            return user;
         }
     }
 }
