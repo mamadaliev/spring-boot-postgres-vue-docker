@@ -5,6 +5,7 @@ import com.github.egnaf.spring_boot_docker_example.exception.UserExistsException
 import com.github.egnaf.spring_boot_docker_example.exception.UserNotFoundException;
 import com.github.egnaf.spring_boot_docker_example.repository.UserRepository;
 import com.github.egnaf.spring_boot_docker_example.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@Slf4j
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
@@ -33,6 +35,7 @@ public class UserServiceImpl implements UserService {
         if (user.isPresent()) {
             return user.get();
         } else {
+            log.info(String.valueOf(user.orElse(null)));
             throw new UserNotFoundException();
         }
     }
