@@ -8,7 +8,7 @@ spring:
     active: dev
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://database:5432/demo?createDatabaseIfNotExist=true
+    url: jdbc:postgresql://postgres:5432/demo?createDatabaseIfNotExist=true
     username: root
     password: root
   jpa:
