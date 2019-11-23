@@ -6,6 +6,8 @@ server:
 spring:
   profiles:
     active: dev
+  main:
+    banner-mode: off
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://postgres:5432/demo?createDatabaseIfNotExist=true
