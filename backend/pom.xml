@@ -3,8 +3,20 @@
 
     <groupId>com.github.egnaf.spring_boot_docker_example</groupId>
     <artifactId>backend</artifactId>
-    <version>1.0</version>
+    <version>0.1</version>
     <packaging>jar</packaging>
+    <name>Spring boot docker example</name>
+    <description>
+        An example of a simple Spring Boot application and other services running
+        with docker-compose file configuration
+    </description>
+    <developers>
+        <developer>
+            <id>1</id>
+            <name>Sherzod Mamadaliev</name>
+            <email>egnaf@yahoo.com</email>
+        </developer>
+    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
