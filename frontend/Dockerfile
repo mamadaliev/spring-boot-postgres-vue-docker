@@ -3,6 +3,6 @@ RUN npm install -g http-server
 WORKDIR /app/frontend
 COPY package*.json ./
 RUN npm install --production
-COPY .. .
+COPY . .
 RUN npm run build
 CMD ["http-server", "dist", "-p", "3000"]
