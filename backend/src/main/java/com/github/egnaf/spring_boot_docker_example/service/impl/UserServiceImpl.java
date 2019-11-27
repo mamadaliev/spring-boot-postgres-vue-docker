@@ -35,8 +35,7 @@ public class UserServiceImpl implements UserService {
         if (user.isPresent()) {
             return user.get();
         } else {
-            log.info(String.valueOf(user.orElse(null)));
-            throw new UserNotFoundException();
+            throw new UserNotFoundException("User with id=" + id + " not found");
         }
     }
 
@@ -44,9 +43,9 @@ public class UserServiceImpl implements UserService {
     public User addUser(String nickname, String email, String password) {
 
         if (userRepository.existsByEmail(email)) {
-            throw new UserExistsException("User email exists");
+            throw new UserExistsException("User email=" + email + " already exists");
         } else if (userRepository.existsByNickname(nickname)) {
-            throw new UserExistsException("User nickname exists");
+            throw new UserExistsException("User nickname=" + nickname + " already exists");
         } else if (password == null || password.equals("")) {
             throw new IllegalArgumentException();
         } else {

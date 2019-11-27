@@ -1,18 +1,17 @@
 package com.github.egnaf.spring_boot_docker_example.rest;
 
 import com.github.egnaf.spring_boot_docker_example.domain.User;
-import com.github.egnaf.spring_boot_docker_example.exception.UserExistsException;
-import com.github.egnaf.spring_boot_docker_example.exception.UserNotFoundException;
 import com.github.egnaf.spring_boot_docker_example.service.UserService;
 import com.github.egnaf.spring_boot_docker_example.transfer.UserDto;
+import lombok.extern.slf4j.Slf4j;
 import org.dozer.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Slf4j
 @RestController
 public class UserController {
 
@@ -26,31 +25,26 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    public ResponseEntity<?> getUsers() {
+    public List<UserDto> getUsers() {
         List<UserDto> users = userService.getUsers().stream()
                 .map(user -> mapper.map(user, UserDto.class))
                 .collect(Collectors.toList());
-        return ResponseEntity.ok(users);
+        log.debug(users.toString());
+        return users;
     }
 
     @GetMapping("/users/{id}")
-    public ResponseEntity<?> getUser(@PathVariable long id) {
-        try {
-            UserDto user = mapper.map(userService.getUser(id), UserDto.class);
-            return ResponseEntity.ok(user);
-        } catch (UserNotFoundException e) {
-            return ResponseEntity.noContent().build();
-        }
+    public UserDto getUser(@PathVariable long id) {
+        UserDto user = mapper.map(userService.getUser(id), UserDto.class);
+        log.debug(user.toString());
+        return user;
     }
 
     @PostMapping("/users")
-    public ResponseEntity<?> addUser(@RequestBody User user) {
-        try {
-            UserDto userDto = mapper.map(
-                    userService.addUser(user.getNickname(), user.getEmail(), user.getPassword()), UserDto.class);
-            return ResponseEntity.ok(userDto);
-        } catch (UserExistsException e) {
-            return ResponseEntity.badRequest().body(e);
-        }
+    public UserDto addUser(@RequestBody User user) {
+        UserDto newUser =  mapper.map(
+                userService.addUser(user.getNickname(), user.getEmail(), user.getPassword()), UserDto.class);
+        log.debug(newUser.toString());
+        return newUser;
     }
 }
