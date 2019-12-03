@@ -1,8 +1,8 @@
-package com.github.egnaf.spring_boot_docker_example.rest;
+package com.github.egnaf.spring_docker_example.rest;
 
-import com.github.egnaf.spring_boot_docker_example.domain.User;
-import com.github.egnaf.spring_boot_docker_example.service.UserService;
-import com.github.egnaf.spring_boot_docker_example.transfer.UserDto;
+import com.github.egnaf.spring_docker_example.domain.User;
+import com.github.egnaf.spring_docker_example.service.UserService;
+import com.github.egnaf.spring_docker_example.transfer.UserDto;
 import lombok.extern.slf4j.Slf4j;
 import org.dozer.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.github.egnaf.spring_boot_docker_example.config;
+package com.github.egnaf.spring_docker_example.config;
 
 import org.dozer.DozerBeanMapper;
 import org.springframework.context.annotation.Bean;

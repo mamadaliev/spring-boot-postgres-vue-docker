@@ -1,7 +1,7 @@
-package com.github.egnaf.spring_boot_docker_example.rest.error;
+package com.github.egnaf.spring_docker_example.rest.error;
 
-import com.github.egnaf.spring_boot_docker_example.exception.UserExistsException;
-import com.github.egnaf.spring_boot_docker_example.exception.UserNotFoundException;
+import com.github.egnaf.spring_docker_example.exception.UserExistsException;
+import com.github.egnaf.spring_docker_example.exception.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

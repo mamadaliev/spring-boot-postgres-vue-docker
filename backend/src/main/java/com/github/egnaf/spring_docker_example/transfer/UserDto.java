@@ -1,4 +1,4 @@
-package com.github.egnaf.spring_boot_docker_example.transfer;
+package com.github.egnaf.spring_docker_example.transfer;
 
 import lombok.Data;
 

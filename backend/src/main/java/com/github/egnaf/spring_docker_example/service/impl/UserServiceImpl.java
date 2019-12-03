@@ -1,10 +1,10 @@
-package com.github.egnaf.spring_boot_docker_example.service.impl;
+package com.github.egnaf.spring_docker_example.service.impl;
 
-import com.github.egnaf.spring_boot_docker_example.domain.User;
-import com.github.egnaf.spring_boot_docker_example.exception.UserExistsException;
-import com.github.egnaf.spring_boot_docker_example.exception.UserNotFoundException;
-import com.github.egnaf.spring_boot_docker_example.repository.UserRepository;
-import com.github.egnaf.spring_boot_docker_example.service.UserService;
+import com.github.egnaf.spring_docker_example.domain.User;
+import com.github.egnaf.spring_docker_example.exception.UserExistsException;
+import com.github.egnaf.spring_docker_example.exception.UserNotFoundException;
+import com.github.egnaf.spring_docker_example.repository.UserRepository;
+import com.github.egnaf.spring_docker_example.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

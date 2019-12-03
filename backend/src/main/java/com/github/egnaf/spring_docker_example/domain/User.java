@@ -1,4 +1,4 @@
-package com.github.egnaf.spring_boot_docker_example.domain;
+package com.github.egnaf.spring_docker_example.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
