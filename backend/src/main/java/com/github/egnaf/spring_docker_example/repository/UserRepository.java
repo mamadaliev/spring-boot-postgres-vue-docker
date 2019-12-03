@@ -1,6 +1,6 @@
-package com.github.egnaf.spring_boot_docker_example.repository;
+package com.github.egnaf.spring_docker_example.repository;
 
-import com.github.egnaf.spring_boot_docker_example.domain.User;
+import com.github.egnaf.spring_docker_example.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

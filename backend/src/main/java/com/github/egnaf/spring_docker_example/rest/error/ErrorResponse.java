@@ -1,13 +1,13 @@
-package com.github.egnaf.spring_boot_docker_example.rest.error;
+package com.github.egnaf.spring_docker_example.rest.error;
 
 import lombok.Data;
 
 @Data
-public class ErrorResponse {
+class ErrorResponse {
     private int status;
     private String message;
 
-    public ErrorResponse(int status, String message) {
+    ErrorResponse(int status, String message) {
         this.status = status;
         this.message = message;
     }

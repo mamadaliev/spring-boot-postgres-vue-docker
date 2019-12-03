@@ -21,6 +21,9 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     open-in-view: false
     generate-ddl: false
+  devtools:
+    restart:
+      enabled: true
 
 logging:
   pattern:

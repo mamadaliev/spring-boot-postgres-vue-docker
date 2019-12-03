@@ -1,4 +1,4 @@
-package com.github.egnaf.spring_boot_docker_example.exception;
+package com.github.egnaf.spring_docker_example.exception;
 
 public class UserNotFoundException extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package com.github.egnaf.spring_boot_docker_example;
+package com.github.egnaf.spring_docker_example;
 
 import org.springframework.boot.test.context.SpringBootTest;
 
