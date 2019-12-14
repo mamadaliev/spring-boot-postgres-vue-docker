@@ -1,4 +1,20 @@
 language: java
+jdk: openjdk8
 install: true
+
+cache:
+  directories:
+    - $HOME/.m2
+
 script:
-  - cd spring-boot-postgres && mvn -B verify && cd ..
+  - cd backend && mvn -B verify && cd ..
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+notifications:
+  email:
+    recipients:
+      - egnaf@yahoo.com
+    on_success: never
+    on_failure: always
