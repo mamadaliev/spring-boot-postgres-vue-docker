@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/egnaf/spring-boot-docker-example.svg)](https://travis-ci.org/egnaf/spring-boot-docker-example)
 [![codecov](https://codecov.io/gh/egnaf/spring-boot-docker-example/branch/dev/graph/badge.svg)](https://codecov.io/gh/egnaf/spring-boot-docker-example)
-# spring-boot-postgres-vue-docker-example
+# spring-boot-postgres-vue-docker
 
 ## Stack
 - Spring Boot 2.2.0
